@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="R[7]" source="Pin Planner" >
+		</pin>
+		<pin name="R[6]" source="Pin Planner" >
+		</pin>
+		<pin name="R[5]" source="Pin Planner" >
+		</pin>
+		<pin name="B[7]" source="Pin Planner" >
+		</pin>
+		<pin name="B[6]" source="Pin Planner" >
+		</pin>
+		<pin name="B[5]" source="Pin Planner" >
+		</pin>
+		<pin name="G[7]" source="Pin Planner" >
+		</pin>
+		<pin name="G[6]" source="Pin Planner" >
+		</pin>
+		<pin name="G[5]" source="Pin Planner" >
+		</pin>
+		<pin name="OB[7]" source="Pin Planner" >
+		</pin>
+		<pin name="OB[6]" source="Pin Planner" >
+		</pin>
+		<pin name="OB[5]" source="Pin Planner" >
+		</pin>
+		<pin name="OG[7]" source="Pin Planner" >
+		</pin>
+		<pin name="OG[6]" source="Pin Planner" >
+		</pin>
+		<pin name="OG[5]" source="Pin Planner" >
+		</pin>
+		<pin name="OR[7]" source="Pin Planner" >
+		</pin>
+		<pin name="OR[6]" source="Pin Planner" >
+		</pin>
+		<pin name="OR[5]" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

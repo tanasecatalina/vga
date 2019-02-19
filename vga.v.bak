@@ -1,0 +1,26 @@
+module vga (
+	input clk,
+	input reset,
+	input [3:0] mode,
+	output [11:0] xPOS, yPOS, //flux de date de intrare
+	output Display_active,
+	input [7:0] R,G,B,
+	output  [7:0] OR,OG,OB,
+	output Hsync, Vsync,
+	output Hsync_neg, Vsync_neg
+		
+	);
+assign OR=R;
+assign OB=B;
+assign OG=G;
+assign Hsync_neg= ~Hsync;
+assign Vsync_neg= ~Vsync;
+wire newline, newline1;
+wire w;
+wire x_active, y_active;
+assign Display_active = (x_active && y_active) ? 1 : 0 ;
+//mode M (.modee(mode), .ck(clk), .reset(reset),.ck_frecv(w));
+counter  #(56,800,120,64) C1(.ck(w),.reset(reset),.position(xPOS),.newline(newline),.syncron(Hsync),.active(x_active)); 
+counter  #(37,600,6,23) C2(.ck(newline),.reset(reset),.position(yPOS),.syncron(Vsync),.active(y_active));
+endmodule
+
